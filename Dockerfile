@@ -1,5 +1,7 @@
 ARG centos=7.9.2009
-FROM aursu/islbuild:${centos}-base
+FROM aursu/rpmbuild:${centos}-build
+
+RUN yum -y install gmp-devel
 
 COPY SOURCES ${BUILD_TOPDIR}/SOURCES
 COPY SPECS ${BUILD_TOPDIR}/SPECS
