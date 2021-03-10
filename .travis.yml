@@ -15,9 +15,6 @@ env:
   jobs:
     - BUILD=centos7build UPLOADER=centos7bintray
 
-install:
-  - docker-compose -f docker-compose.base.yml build --no-cache --pull ${BASE}
-
 before_script:
   - docker-compose build --no-cache ${BUILD}
 
