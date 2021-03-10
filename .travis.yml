@@ -10,7 +10,7 @@ addons:
 
 env:
   global:
-    - PACKAGE_VCS_URL=https://github.com/aursu/rpmbuild-redis6
+    - PACKAGE_VCS_URL=https://gitlab.com/aursu/rpmbuild-isl.git
     - BINTRAY_REPO=custom
   jobs:
     - BUILD=centos7build UPLOADER=centos7bintray
