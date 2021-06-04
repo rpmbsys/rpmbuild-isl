@@ -5,6 +5,9 @@ License: MIT
 Group: System Environment/Libraries
 URL: http://isl.gforge.inria.fr/
 
+%define _debugsource_template %{nil}
+%define debug_package %{nil}
+
 %global libmajor 15
 %global libversion %{libmajor}.1.1
 
